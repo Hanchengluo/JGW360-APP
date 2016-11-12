@@ -4,8 +4,8 @@
   height: 100%;
 }
 body {
-  font: 12px/1.5 tahoma, 'Microsoft YaHei', arial, sans-serif;
-  font-family: arial;
+  font: 12px/1.5 tahoma, 'Microsoft YaHei', arial, sans-serif, 'Hiragino Sans GB';
+  font-family: arial, 'Microsoft YaHei', sans-serif, 'Hiragino Sans GB';
   height: 100%;
   color: #333;
   background: #F5F5F5;
@@ -137,6 +137,21 @@ a {
 .bg-bai {
   background: #fff;
 }
+.bg-cheng {
+  background: #f35929;
+}
+.bg-hui {
+  background: #666666;
+}
+.bg-slan {
+  background: #3c6191 !important;
+}
+.bg-dhui {
+  background: #ebe6e4;
+}
+.bg-hong {
+  background: #e00c0c;
+}
 .c-btn0 {
   font-family: 'Microsoft YaHei';
   font-size: 0.7em;
@@ -236,6 +251,12 @@ a {
 .col-shong {
   color: #BD0303;
 }
+.col-bai {
+  color: #ffffff;
+}
+.col-huang {
+  color: #ffd85c;
+}
 .font8 {
   font-size: 0.8em !important;
 }
@@ -327,7 +348,93 @@ a {
   font-size: 1.2rem;
 }
 #bottom-nav li p {
-  font-size: 1rem;
+  font-size: .6rem;
+}
+#bottom-nav .shopbtn {
+  display: block;
+  overflow: hidden;
+  height: 4em;
+  background: #fff;
+  border-top: 1px solid #ddd;
+}
+#bottom-nav .shopbtn a {
+  display: block;
+  overflow: hidden;
+  height: 4em;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+}
+#bottom-nav .shopbtn a.home {
+  width: 20%;
+  border-right: 1px solid #ddd;
+  padding-top: .3em;
+}
+#bottom-nav .shopbtn a.collect {
+  width: 20%;
+  padding-top: .3em;
+}
+#bottom-nav .shopbtn a.collect i {
+  color: #f35929;
+}
+#bottom-nav .shopbtn a.addcar {
+  width: 30%;
+  background: #f35929;
+  line-height: 3em;
+  color: #ffffff;
+  font-size: 1.4em;
+}
+#bottom-nav .shopbtn a.buynow {
+  width: 30%;
+  background: #e00c0c;
+  line-height: 3em;
+  color: #ffffff;
+  font-size: 1.4em;
+}
+#bottom-nav .shopbtn a.onebook {
+  width: 60%;
+  background: #f35929;
+  line-height: 3em;
+  color: #ffffff;
+  font-size: 1.4em;
+}
+.bottom-tab {
+  display: block;
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff;
+  height: 3.4em;
+  line-height: 3.4em;
+  border-top: 1px solid #ddd;
+  overflow: hidden;
+}
+.bottom-tab a.account {
+  padding: 1em 1.8em;
+  font-size: 1.4em;
+  color: #fff;
+  background: #f35929;
+}
+.bottom-tab a:hover.account {
+  background: #c94922;
+}
+.bottom-tab a.cancel {
+  padding: .6em 1em;
+  background: #aaa;
+  border-radius: .4em;
+  color: #ffffff;
+}
+.bottom-tab a:hover.cancel {
+  color: rgba(255, 255, 255, 0.6);
+}
+.bottom-tab a.confirm {
+  padding: .6em 1em;
+  background: #f35929;
+  border-radius: .4em;
+  color: #ffffff;
+  margin-right: .4em;
+}
+.bottom-tab a:hover.confirm {
+  color: rgba(255, 255, 255, 0.6);
 }
 .form-item {
   position: relative;
@@ -471,8 +578,14 @@ a {
 .padd10 {
   padding-bottom: 10px !important;
 }
+.padd28 {
+  padding-bottom: 2.8em;
+}
 .padr4 {
   padding-right: 0.4em;
+}
+.padl40 {
+  padding-left: 4em;
 }
 .padl4 {
   padding-left: 0.4em;
@@ -489,8 +602,14 @@ a {
 .mgb10 {
   margin-bottom: 10px !important;
 }
+.mgb76 {
+  margin-bottom: 76px !important;
+}
 .mgl10 {
   margin-left: 10px !important;
+}
+.mgb76 {
+  margin-bottom: 76px !important;
 }
 .w50 {
   width: 50%;
@@ -712,6 +831,8 @@ a {
 }
 .information-list {
   position: relative;
+  display: block;
+  overflow: hidden;
   border-top: #ddd solid 1px;
 }
 .information-list:first-child {
@@ -721,10 +842,48 @@ a {
   padding: 0.1rem 0.5rem;
   font-size: 1.1rem;
   font-weight: 500;
+  color: #3c6191;
 }
 .information-list p {
   padding: 0.1rem 0.5rem;
   font-size: 1rem;
+}
+.information-list p .w50 {
+  display: inline-block;
+  overflow: hidden;
+  width: 50%;
+  font-size: .8rem;
+  line-height: 1.6rem;
+  vertical-align: middle;
+}
+.information-list .pagepicbox {
+  display: block;
+  overflow: hidden;
+}
+.information-list .pagepicbox .pic {
+  float: left;
+  width: 25%;
+  display: block;
+  overflow: hidden;
+  margin: 4px;
+}
+.information-list .pagepicbox .pic img {
+  width: 100%;
+}
+.information-list .pagepicbox .info {
+  float: left;
+  width: 72%;
+  display: block;
+  overflow: hidden;
+}
+.information-list .pagepicbox .info > p {
+  display: -webkit-box;
+  line-height: 1rem;
+  height: 2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .title-Arow h3 {
   height: 1.6em !important;
@@ -979,6 +1138,15 @@ a {
   -o-text-overflow: ellipsis;
   white-space: nowrap;
 }
+.Tlist-box li a.delect {
+  display: inline-block;
+  overflow: hidden;
+  padding: 4px 12px;
+  color: #ffffff;
+  background: #f35929;
+  border-radius: 4px;
+  margin-left: .5em;
+}
 .jc-tuan li {
   float: left;
   position: relative;
@@ -1087,6 +1255,265 @@ a {
   border: #ddd solid 1px;
   margin-right: 10px;
 }
+.jixiepic {
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.jixiepic img {
+  width: 96%;
+  margin: 2%;
+}
+.moneybox {
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+  background: #fff;
+}
+.moneybox .title {
+  color: #3c6191;
+  font-size: 1.8em;
+}
+.probox-tab {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  height: 2.4em;
+  line-height: 2.4em;
+  font-size: 1.4em;
+  border-bottom: 1px solid #ddd;
+}
+.probox-tab li {
+  display: block;
+  width: 25%;
+  overflow: hidden;
+  float: left;
+  text-align: center;
+}
+.probox-tab a {
+  display: inline-block;
+  height: 2.2em;
+  width: 92%;
+  margin: 0 4%;
+}
+.probox-tab a:active,
+.probox-tab a:hover,
+.probox-tab a.active {
+  border-bottom: .2em solid #f35929;
+}
+.probox-info {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  padding: 4px 12px;
+}
+.probox-info .parameter {
+  display: block;
+  overflow: hidden;
+}
+.probox-info .parameter h3 {
+  font-size: 1.4em;
+  color: #3c6191;
+  border-bottom: 1px solid #3c6191;
+  margin-bottom: .4em;
+}
+.probox-info .parameter li {
+  display: block;
+  height: 2em;
+  line-height: 2em;
+  font-size: 1.4em;
+  border-bottom: 1px solid #aaa;
+}
+.probox-info .parameter p {
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+.probox-info .parameter img {
+  width: 100%;
+}
+.probox-info .commentbox {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+.probox-info .commentbox .title {
+  display: block;
+  overflow: hidden;
+}
+.probox-info .commentbox .info {
+  display: block;
+  overflow: hidden;
+  color: #333333;
+}
+.addcarbox {
+  display: block;
+  overflow: hidden;
+}
+.addcarbox .prosec {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.addcarbox .prosec .pic {
+  display: block;
+  overflow: hidden;
+  width: 8em;
+  height: 8em;
+  padding: 4px;
+  border: 1px solid #ddd;
+}
+.addcarbox .prosec .pic img {
+  width: 100%;
+}
+.addcarbox .prosec .info {
+  display: block;
+  overflow: hidden;
+  line-height: 2.4em;
+  margin-left: .4em;
+}
+.addcarbox .prosec .icon-del0 {
+  position: absolute;
+  right: .2em;
+}
+.addcarbox .prosize {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.addcarbox .prosize .tag {
+  display: block;
+  overflow: hidden;
+}
+.addcarbox .prosize .tag a {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 4px 8px;
+  border: 1px solid #f35929;
+  border-radius: 4px;
+  margin: 2px 4px;
+}
+.addcarbox .pronum {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  font-size: 1.4em;
+}
+.addcarbox .pronum a {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.4em;
+  text-align: center;
+  border: 1px solid #333;
+}
+.addcarbox .pronum input {
+  display: inline-block;
+  width: 4em;
+  height: 1.4em;
+  border: 1px solid #333;
+  margin: 0 4px;
+}
+.addcarbox a.confirm {
+  display: inline-block;
+  width: 100%;
+  height: 2.4em;
+  line-height: 2.4em;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+  margin-top: 8px;
+}
+.timebox {
+  display: block;
+  overflow: hidden;
+  background: #f6f1ee;
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.timebox .timecount {
+  margin: 4px 0;
+  font-size: 1.8em;
+}
+.timebox .timecount i {
+  color: #f35929;
+}
+.usedform {
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+  border-bottom: 1px solid #ddd;
+}
+.usedform h3 {
+  height: 2.4em;
+  line-height: 2.4em;
+  border-bottom: 1px solid #ddd;
+}
+.usedbox {
+  display: block;
+  overflow: hidden;
+  height: 2.8em;
+  line-height: 2.8em;
+  margin: 8px 0;
+}
+.usedbox label {
+  display: inline-block;
+  overflow: hidden;
+  width: 40%;
+  text-align: right;
+  float: left;
+}
+.usedbox select {
+  display: inline-block;
+  height: 2.4em;
+  margin-top: .2em;
+  float: left;
+  width: 50%;
+  border: 1px solid #aaa;
+}
+.usedbox input {
+  height: 2em;
+  margin-top: .4em;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  width: 50%;
+}
+.usedbox a.submit {
+  display: block;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+}
+.usedprize {
+  display: block;
+  overflow: hidden;
+  padding: 12px 8px;
+  background: #f6f1ee;
+  border: 1px solid #ddd;
+  margin: 8px;
+}
+.repurch-time {
+  display: block;
+  overflow: hidden;
+  padding: 8px;
+  background: #fff;
+}
+.repurch-time li {
+  height: 2.4em;
+  line-height: 2.4em;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 4px;
+}
+.repurch-time input {
+  border: 1px solid #333;
+  height: 2em;
+  width: 14em;
+  box-sizing: border-box;
+}
 .border-b {
   border-bottom: #ddd solid 1px;
 }
@@ -1095,4 +1522,1270 @@ a {
 }
 .border-no {
   border: none;
+}
+.tick {
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  padding-top: .4em;
+  margin: 0 .4em;
+}
+.tick input[type="checkbox"] {
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  -webkit-appearance: none;
+  background: url(../../images/tick.png) no-repeat;
+  background-position: 0;
+  background-size: 200%;
+}
+.tick input[type="checkbox"]:checked {
+  background-position: -1.5em;
+}
+.tick input[type="checkbox"] .active {
+  background-position: -1.5em;
+}
+.shop-box {
+  position: relative;
+  z-index: 1;
+  background: #ebe6e4;
+  overflow: hidden;
+}
+.shop-box li {
+  display: block;
+  margin-bottom: .6em;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #fff !important;
+  overflow: hidden;
+}
+.shop-box .shop-tit {
+  display: flex;
+  width: 100%;
+  height: 2.4em;
+  line-height: 2.4em;
+  border-bottom: 1px solid #ddd;
+  padding-left: .4em;
+  overflow: hidden;
+}
+.shop-box .shop-tit span {
+  display: inline-block;
+  float: left;
+}
+.shop-box .shop-tit a.arrow-next {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  color: #f35929;
+  float: left;
+  margin-left: .4em;
+}
+.shop-box .shopbox-info {
+  display: flex;
+  width: 100%;
+  padding: 1em .4em;
+  overflow: hidden;
+}
+.shop-box .checkbox {
+  display: block;
+  width: 7%;
+  padding-top: 3em;
+}
+.shop-box .checkbox input[type="checkbox"] {
+  display: inline-block;
+  width: 1.6em;
+  height: 1.6em;
+  -webkit-appearance: none;
+  background: url(../../images/tick.png) no-repeat;
+  background-position: 0;
+  background-size: 200%;
+}
+.shop-box .checkbox input[type="checkbox"]:checked {
+  background-position: -1.5em;
+}
+.shop-box .checkbox input[type="checkbox"] .active {
+  background-position: -1.5em;
+}
+.shop-box .shopic {
+  display: block;
+  width: 20%;
+  padding: 2%;
+  overflow: hidden;
+  border: 1px solid #ddd;
+}
+.shop-box .shopic img {
+  width: 100%;
+}
+.shop-box .shopin {
+  display: block;
+  width: 64%;
+}
+.shop-box .shopin p {
+  width: 100%;
+  margin-bottom: .4em;
+}
+.shop-box .shopin .numadd {
+  display: block;
+  width: 70%;
+  margin-top: .8em;
+}
+.shop-box .shopin .numadd a {
+  display: inline-block;
+  float: left;
+  width: 1.4em;
+  height: 1.4em;
+  font-size: 1.2em;
+  text-align: center;
+  border: 1px solid #f35929;
+  color: #f35929;
+}
+.shop-box .shopin .numadd a:hover {
+  background: #f35929;
+  color: #fff;
+}
+.shop-box .shopin .numadd a.active {
+  background: #f35929;
+  color: #fff;
+}
+.shop-box .shopin .numadd input {
+  display: inline-block;
+  float: left;
+  width: 3em;
+  height: 1.7em;
+  margin: 0 .4em;
+  border: 1px solid #f35929;
+  padding-left: .4em;
+}
+.shop-box .shopin a.btn-del {
+  display: inline-block;
+  padding: .4em .8em;
+  line-height: 1em;
+  font-size: 1em;
+  color: #3c6191;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid #3c6191;
+  margin-top: .6em;
+}
+.shop-box .shopin a:hover.btn-del {
+  background: #f35929;
+  border: none;
+  color: #fff;
+}
+.shop-box .receive-info {
+  display: flex;
+  width: 100%;
+  height: 6em;
+  background: #fff;
+  margin-bottom: .8em;
+  padding: .4em;
+}
+.shop-box .receive-info .re-in {
+  display: block;
+  width: 86%;
+  float: left;
+}
+.shop-box .receive-info .re-next {
+  display: block;
+  width: 14%;
+  float: left;
+  text-align: center;
+  line-height: 6em;
+}
+.shop-box .receive-info .address {
+  margin-top: .4em;
+}
+.shop-box .shopoint {
+  display: block;
+  padding: 1em .4em;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+.shop-box .shopoint span em {
+  margin-left: .4em;
+}
+.shop-box .shopoint span input {
+  border: none;
+}
+.shop-box .paymoney {
+  position: relative;
+  display: block;
+  width: 96%;
+  height: 2.8em;
+  line-height: 2.8em;
+  font-size: 1.2em;
+  margin: .4em 0;
+  padding: 0 2%;
+}
+.shop-box .payway {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.shop-box .payway h2.tit {
+  width: 100%;
+  height: 2.4em;
+  line-height: 2.4em;
+  font-size: 1.2em;
+  color: #f35929;
+  padding: 0 .4em;
+}
+.shop-box .payway ul {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+.shop-box .payway ul li {
+  display: block;
+  height: 2.8em;
+  line-height: 2.8em;
+  margin: 0 auto;
+  padding: 0 .4em;
+  border-bottom: none;
+}
+.shop-box .payway ul li input[type="radio"] {
+  -webkit-appearance: none;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #f35929;
+  border-radius: .5em;
+  vertical-align: middle;
+}
+.shop-box .payway ul li input[type="radio"]:focus {
+  background: #f35929;
+}
+.shop-box .payway ul li span {
+  margin-left: .8em;
+}
+.shop-box .payway ul li a {
+  display: inline-block;
+}
+.shop-box .success {
+  display: block;
+  padding-top: 2em;
+  height: 5.6em;
+  text-align: center;
+  font-size: 2em;
+  color: #f35929;
+}
+.shop-box .success i {
+  font-size: 2em !important;
+}
+.shop-box .btn-tab {
+  display: block;
+  height: 4em;
+  text-align: center;
+  overflow: hidden;
+}
+.shop-box .btn-tab a {
+  display: inline-block;
+  color: #fff;
+  margin: 0 .6em;
+  font-size: 1.2em;
+  padding: .6em 2em;
+}
+a.btn-pay {
+  display: block;
+  width: 100%;
+  height: 3.4em;
+  max-width: 640px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 3.4em;
+  background: #f35929;
+  text-align: center;
+}
+.usercenter {
+  background: #ebe6e4;
+}
+.userinfo {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.userinfo .ic-user {
+  display: flex;
+  height: 3em;
+  color: #fff;
+}
+.userinfo .ic-user a {
+  margin: .4em;
+}
+.userinfo .user {
+  display: flex;
+  width: 96%;
+  padding: 1em 2%;
+  color: #fff;
+}
+.userinfo .user .icon-user {
+  display: block;
+  width: 6em;
+  height: 6em;
+  line-height: 6em;
+  border-radius: 3em;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #f35929;
+  text-align: center;
+  color: #f35929;
+  overflow: hidden;
+}
+.userinfo .user .icon-user img {
+  width: 100%;
+}
+.userinfo .user .usersec {
+  display: block;
+  width: 68%;
+  margin-left: 1em;
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+.myorder {
+  display: block;
+  margin: 1em auto;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+.myorder h2.tit {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 .4em;
+  font-size: 1.2em;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+}
+.myorder h2.tit a {
+  font-size: .8em !important;
+}
+.myorder li {
+  display: block;
+  float: left;
+  width: 20%;
+  margin: .4em auto;
+  text-align: center;
+}
+.myorder li a.ic-order {
+  display: block;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  border: 1px solid #f35929;
+  border-radius: 2em;
+  margin: .4em auto;
+}
+.myorder li a.ic-order i {
+  font-size: 2em;
+  color: #f35929;
+}
+.myorder li a:hover.ic-order {
+  background: #f35929;
+  transition: .6s;
+  -moz-transition: .6s;
+  -webkit-transition: .6s;
+}
+.myorder li a:hover.ic-order i {
+  color: #fff;
+}
+.order-li {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.order-li li {
+  display: block;
+  height: 2.8em;
+  line-height: 2.8em;
+  padding: 0 .4em;
+  border-bottom: 1px solid #ddd;
+}
+.message {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.message li {
+  display: block;
+  padding: 0 .4em;
+  border-bottom: 1px solid #ddd;
+}
+.message li a {
+  display: inline-block;
+  width: 100%;
+}
+.message li a .tit {
+  display: block;
+  height: 2em;
+  line-height: 2m;
+  margin-bottom: .4em;
+}
+.message li p {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1em;
+}
+.message li:hover {
+  background: #ddd;
+}
+.footprint {
+  display: block;
+  width: 100%;
+}
+.footprint h2.tit {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding-left: .4em;
+  font-weight: normal;
+  border-bottom: 1px solid #ddd;
+}
+.footprint li {
+  display: block;
+  padding: .8em .4em;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.footprint li a {
+  display: inline-block;
+  width: 100%;
+}
+.footprint li .printimg {
+  display: block;
+  float: left;
+  width: 6em;
+  height: 6em;
+  border: 1px solid #f35929;
+  overflow: hidden;
+}
+.footprint li .printimg img {
+  width: 100%;
+}
+.footprint li .printext {
+  display: block;
+  float: left;
+  width: 68%;
+  padding-left: 2%;
+}
+.footprint li .printext h3 {
+  color: #3c6191;
+}
+.footprint li .printext .discount {
+  margin-left: 2em;
+  text-decoration: line-through;
+}
+.footprint li:hover {
+  background: #ddd;
+}
+.order-box {
+  position: relative;
+  z-index: 1;
+  background: #ebe6e4;
+  overflow: hidden;
+}
+.order-box .orderlist {
+  display: block;
+  width: 100%;
+}
+.order-box .orderlist li {
+  display: block;
+  background: #fff;
+  margin-bottom: 1em;
+}
+.order-box .ordertit {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 .4em;
+}
+.order-box .ordertit .arrow-next {
+  margin-left: .6em;
+}
+.order-box .orderbox-info {
+  display: flex;
+  padding: .4em;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.order-box .orderbox-info .orderpic {
+  display: block;
+  width: 6em;
+  height: 6em;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+.order-box .orderbox-info .orderpic img {
+  width: 100%;
+}
+.order-box .orderbox-info .orderin {
+  display: block;
+  width: 70%;
+  padding-left: 2%;
+  overflow: hidden;
+}
+.order-box .order-btn {
+  display: block;
+  width: 100%;
+  height: 5.4em;
+  line-height: 2.4em;
+  text-align: right;
+}
+.order-box .order-btn .txt {
+  display: block;
+  width: 100%;
+}
+.order-box .order-btn .btn {
+  display: block;
+  width: 100%;
+  height: 3em;
+  line-height: 2.8em;
+}
+.order-box .order-btn .btn a {
+  display: inline-block;
+  width: 6em;
+  margin-right: .4em;
+  text-align: center;
+  color: #fff;
+  border-radius: .4em;
+}
+.order-box .order-btn .btn a:hover {
+  color: rgba(255, 255, 255, 0.6);
+  transition: .2s;
+}
+.order-box .order-btn .btn a.btn-hui {
+  background: #aaa;
+}
+.order-box .order-btn .btn a.btn-cheng {
+  background: #f35929;
+}
+.order-box .order-state {
+  display: block;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+.order-box .order-state li {
+  display: block;
+  height: auto;
+  line-height: 2.8em;
+  border-bottom: 1px solid #ddd;
+  padding: 0 .4em;
+}
+.order-box .order-state li .tit {
+  font-size: 1.2em;
+  margin-right: 2em;
+}
+.order-box .order-trans {
+  display: block;
+  padding: 0 .4em;
+  line-height: 2.4em;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+.order-tab .class {
+  position: relative;
+  font-size: 1.2em;
+  padding: 0.5em;
+  height: 2.8em;
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  margin: 0 auto .8em auto;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+.order-tab .class a {
+  position: relative;
+  display: inline-block;
+  height: 2em;
+  line-height: 200%;
+  padding: 0 .6em;
+}
+.order-tab .class .current {
+  color: #f35929;
+  border-bottom: 3px solid #f35929;
+}
+.order-tab .Roll {
+  position: relative;
+  white-space: nowrap;
+  width: 105%;
+  padding-right: 2em;
+  height: 7em;
+  overflow: scroll;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+.setup {
+  display: block;
+  width: 100%;
+  padding-top: .4em;
+}
+.setup .seticon {
+  display: block;
+  height: 4.8em;
+  line-height: 4.8em;
+  padding: 0 .4em;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+.setup .seticon span {
+  display: block;
+}
+.setup .seticon span em {
+  display: inline-block;
+}
+.setup .seticon span a {
+  display: inline-block;
+}
+.setup .seticon .ic-user {
+  width: 3.8em;
+  height: 3.8em;
+  margin: .5em 1em;
+  border-radius: 1.9em;
+  border: 2px solid #f35929;
+  overflow: hidden;
+}
+.setup .seticon .ic-user img {
+  width: 100%;
+}
+.setup .setlist {
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 .4em;
+  border-bottom: 1px solid #ddd;
+  overflow: hidden;
+}
+a.exit {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #f35929;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+}
+.addlist {
+  display: block;
+  width: 100%;
+  margin-bottom: .8em;
+  overflow: hidden;
+}
+.addlist li {
+  display: block;
+  background: #fff;
+  margin-bottom: .8em;
+  overflow: hidden;
+}
+.addlist li h2 {
+  display: block;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 .4em;
+}
+.addlist li h2 span.company {
+  width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.addlist li .site {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  padding: .4em;
+}
+.addlist li .operate {
+  display: block;
+  padding: .4em;
+}
+.addlist li .operate span a {
+  display: inline-block;
+  margin: 0 .4em .4em .4em;
+  padding: .2em 1.2em;
+  color: #fff;
+  border-radius: .2em;
+}
+.addlist li .operate span a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.Addinput {
+  display: block;
+  width: 100%;
+}
+.Addinput li {
+  display: block;
+  line-height: 2.4em;
+  padding: 0 .4em;
+  background: #fff;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.Addinput li label {
+  display: inline-block;
+  width: 30%;
+}
+.Addinput li input {
+  display: inline-block;
+  width: 60%;
+  border: none;
+  line-height: 2.4em;
+}
+.Addinput li textarea {
+  width: 100%;
+  line-height: 2.4em;
+  border: none;
+}
+.binding {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.binding .bindphone {
+  display: block;
+  line-height: 3.4em;
+  padding: 0 .4em;
+  background: #fff;
+  margin: .8em 0;
+  overflow: hidden;
+}
+.binding .bindphone a {
+  display: block;
+  background: #f35929;
+  height: 2.4em;
+  line-height: 2.4em;
+  padding: 0 1.2em;
+  margin-top: .5em;
+  color: #fff;
+  border-radius: .4em;
+}
+.binding .bindphone a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.binding .bindphone li {
+  display: block;
+  height: 3.4em;
+  line-height: 3.4em;
+  padding: 0 .4em;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.binding .bindphone li input {
+  border: none;
+  height: 3.4em;
+  line-height: 3.4em;
+}
+.binding a.next {
+  display: inline-block;
+  width: 100%;
+  height: 2.4em;
+  line-height: 2.4em;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  background: #f35929;
+}
+.binding a:hover.next {
+  color: rgba(255, 255, 255, 0.5);
+}
+.binding .success {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.binding .success img {
+  width: 50%;
+}
+.binding .success p {
+  font-size: 1.2em;
+  color: #f35929;
+}
+.transbox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  line-height: 2em;
+  margin-bottom: .8em;
+  padding: 8px;
+}
+.transline {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  padding: .8em 0 .8em 1.4em;
+}
+.transline li {
+  display: block;
+  overflow: hidden;
+  border-left: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+.transline li i.point {
+  display: block;
+  position: absolute;
+  left: 1.2em;
+  width: .6em;
+  height: .6em;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #aaa;
+}
+.transline li .info {
+  display: block;
+  overflow: hidden;
+  margin-left: 2em;
+  border-bottom: 1px solid #ddd;
+  padding: 0 0 8px 0;
+}
+.transline li.active i.point {
+  width: 1em;
+  height: 1em;
+  left: .8em;
+  background: #f35929;
+  border: 1px solid #e00c0c;
+}
+.my-comment {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 1em;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.my-comment a.tit {
+  margin: 4px auto;
+}
+.cominput {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.cominput .picbox {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.cominput .picbox .pic {
+  display: block;
+  overflow: hidden;
+  width: 18%;
+  border: 1px solid #ddd;
+}
+.cominput .picbox .pic img {
+  width: 100%;
+}
+.cominput .picbox h3 {
+  display: block;
+  overflow: hidden;
+  font-size: 1.4em;
+  font-weight: normal;
+  margin-left: 8px;
+}
+.cominput .level {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  height: 2.8em;
+  line-height: 2.8em;
+  padding-left: 8px;
+}
+.cominput .level input[type="radio"].star {
+  cursor: pointer;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0 4px;
+  color: #aaa;
+}
+.cominput .level input[type="radio"].star:checked {
+  color: #ffd85c;
+}
+.cominput .input {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.cominput a.submit {
+  display: block;
+  width: 40%;
+  height: 2.4em;
+  line-height: 2.4em;
+  margin: 8px auto;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+  border-radius: .4em;
+}
+.ownerbox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 1em;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+.ownerbox a.pic {
+  display: block;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  margin-bottom: .4em;
+}
+.ownerbox a.pic img {
+  width: 100%;
+}
+.ownerbox .followtime {
+  display: block;
+  overflow: hidden;
+  height: 2.4em;
+  line-height: 2.4em;
+}
+.ownerbox a.unfollow {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 12px;
+  border-radius: 4px;
+  background: #f35929;
+  color: #ffffff;
+}
+.leasebox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+.leasebox p {
+  display: block;
+  overflow: hidden;
+}
+.leasebox .state {
+  border-bottom: 1px solid #ddd;
+  height: 2em;
+  line-height: 2em;
+  margin-bottom: .4em;
+}
+.leasebox .time {
+  height: 2.8em;
+  line-height: 2.8em;
+}
+.leasebox a.submit {
+  display: inline-block;
+  overflow: hidden;
+  padding: 4px 8px;
+  color: #ffffff;
+  border-radius: 4px;
+  margin-left: 8px;
+}
+.leasebox .commentbox {
+  display: block;
+  overflow: hidden;
+  border-top: 1px solid #ddd;
+}
+.leasebox .commentbox .title {
+  display: block;
+  overflow: hidden;
+}
+.leasebox .commentbox .info {
+  display: block;
+  overflow: hidden;
+}
+.leaseform {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+}
+.leaseform .leaseinput {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+.leaseform .leaseinput label {
+  width: 30%;
+  float: left;
+  font-size: 1.4em;
+  color: #f35929;
+  height: 2em;
+  line-height: 2em;
+}
+.leaseform .leaseinput span {
+  font-size: 1.4em;
+  height: 2em;
+  line-height: 2em;
+}
+.leaseform .leaseinput input {
+  float: left;
+  border: 1px solid #aaa;
+  display: inline-block;
+  width: 60%;
+  height: 2em;
+  line-height: 2em;
+  margin-top: .2em;
+}
+.leaseform a.submit {
+  display: block;
+  margin: 8px auto;
+  width: 40%;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  border-radius: .4em;
+}
+.quotebox {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+.quotebox h3,
+.quotebox .tit {
+  font-weight: 600;
+  margin: .2em auto;
+}
+.quotebox p {
+  line-height: 2em;
+}
+.quotebox a.submit {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 12px;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  float: right;
+  border-radius: .4em;
+}
+.conectbox {
+  text-align: left;
+}
+.conectbox td {
+  border-bottom: 1px solid #ddd;
+  padding: 4px 0;
+}
+.loginbox {
+  display: block;
+  overflow: hidden;
+  padding: 0 24px;
+  margin-top: 24px;
+}
+.loginbox .logo {
+  display: block;
+  width: 40%;
+  margin: 24px 30%;
+}
+.loginbox .logo img {
+  width: 100%;
+}
+.loginbox .inputbox {
+  display: block;
+  overflow: hidden;
+  padding-left: .8em;
+  height: 2.8em;
+  line-height: 2.8em;
+  border: 1px solid #aaa;
+  border-radius: 1.4em;
+  margin-bottom: 12px;
+  font-size: 1.4em;
+}
+.loginbox .inputbox input {
+  border: none;
+}
+.loginbox .inputbox input.w18 {
+  width: 18em;
+}
+.loginbox .inputbox input.w9 {
+  width: 9em;
+}
+.loginbox a.submit {
+  display: block;
+  overflow: hidden;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.4em;
+  height: 2.4em;
+  line-height: 2.4em;
+  border-radius: .4em;
+}
+.loginbox .loginlink {
+  display: block;
+  overflow: hidden;
+  margin-top: 12px;
+  font-size: 1em;
+}
+.loginbox .loginlink a:active,
+.loginbox .loginlink a:hover {
+  color: #f35929;
+}
+.loginbox .confirm {
+  display: block;
+  overflow: hidden;
+}
+.loginbox .confirm a.code {
+  display: inline-block;
+  overflow: hidden;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
+  height: 2.8em;
+  line-height: 2.8em;
+  font-size: 1.4em;
+  padding: 0 8px;
+  border-radius: 8px;
+  float: right;
+}
+.loginbox .agreement {
+  display: block;
+  overflow: hidden;
+  margin: 12px auto;
+}
+.search {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 8px;
+  height: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 2em;
+  margin: 12px 8px 0 8px;
+  background: #fff;
+}
+.search select {
+  display: inline-block;
+  float: left;
+  border: none;
+  width: 4.4rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color: #3c6191;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url(../../images/arrow-down.png) no-repeat scroll right center transparent;
+}
+.search select::-ms-expand {
+  display: none;
+}
+.search input {
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  border: none;
+  width: 64%;
+  float: left;
+  font-size: 1.4em;
+}
+.search a {
+  display: inline-block;
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+.result {
+  display: block;
+  overflow: hidden;
+  background: #eee;
+  padding: 8px 0;
+  margin: 8px 0;
+  color: #3c6191;
+  text-align: center;
+  font-size: 1.4em;
+}
+.classearch {
+  display: block;
+  border-radius: 1.5em;
+  height: 3em;
+  line-height: 3em;
+  border: 1px solid #aaa;
+  margin: 8px;
+  padding-left: 12px;
+}
+.classearch input {
+  display: inline-block;
+  float: left;
+  width: 80%;
+  height: 2.2em;
+  margin-top: .4em;
+  border: none;
+  margin-left: 8px;
+}
+.classearch a {
+  display: inline-block;
+  float: left;
+}
+.classbox {
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+  background: #fff;
+}
+.classbox h2.title {
+  font-size: 1.4em;
+  color: #3c6191;
+  margin-top: 8px;
+  font-weight: 500;
+}
+.classbox .item {
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+.classbox .item li a {
+  display: block;
+  float: left;
+  font-size: 1em;
+  padding: 4px 8px;
+  border: 1px solid #f35929;
+  border-radius: 4px;
+  margin: 4px;
+}
+.classbox .item a:hover,
+.classbox .item a:active,
+.classbox .item a.active {
+  background: #f35929;
+  color: #ffffff;
+}
+.errorbox {
+  display: block;
+  overflow: hidden;
+}
+.errorbox .pic {
+  display: block;
+  overflow: hidden;
+  padding: 1em;
+}
+.errorbox .pic img {
+  width: 100%;
+}
+.errorbox a.backindex {
+  display: block;
+  overflow: hidden;
+  margin: 8px auto;
+  width: 8em;
+  height: 3em;
+  line-height: 3em;
+  background: #f35929;
+  color: #ffffff;
+  text-align: center;
 }

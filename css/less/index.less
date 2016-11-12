@@ -105,6 +105,8 @@
 
 .information-list{
     position: relative;
+    display: block;
+    overflow: hidden;
     border-top: #ddd solid 1px;
     &:first-child {
         border: none;
@@ -113,11 +115,50 @@
         padding: 0.1rem 0.5rem;
         font-size: 1.1rem;
         font-weight: 500;
+        .col-slan;
     }
     p{
         padding: 0.1rem 0.5rem;
         font-size: 1rem;
+        .w50{
+            display: inline-block;
+            overflow: hidden;
+            width: 50%;
+            font-size: .8rem;
+            line-height: 1.6rem;
+            vertical-align: middle;
+        }
     }
+    .pagepicbox{
+        display: block;
+        overflow: hidden;
+        .pic{
+            .l-left;
+            width: 25%;
+            display: block;
+            overflow: hidden;
+            margin: 4px;
+            img{
+                width: 100%;
+            }
+        }
+        .info{
+            .l-left;
+            width: 72%;
+            display: block;
+            overflow: hidden;
+            >p{
+                display: -webkit-box;
+                line-height: 1rem;
+                height: 2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+    }
+    
 }
 .title-Arow h3{
     height: 1.6em !important;
@@ -335,6 +376,15 @@
             padding:0 0.5em;
             .ellipsis();
         }
+        a.delect{
+            display: inline-block;
+            overflow: hidden;
+            padding: 4px 12px;
+            .col-bai;
+            .bg-cheng;
+            border-radius: 4px;
+            margin-left: .5em;
+        }
     }
 }
 //建材直供
@@ -455,5 +505,264 @@
     .swiper-slide{
         border: #ddd solid 1px;
         margin-right: 10px;
+    }
+}
+.jixiepic{
+    background: #fff;
+    border: 1px solid #ddd;
+    img{
+        width: 96%;
+        margin: 2%;
+    }
+}
+.moneybox{
+    display: block;
+    overflow: hidden;
+    padding: 4px 8px;
+    .bg-bai;
+    .title{
+        .col-slan;
+        .font18;
+    }
+}
+.probox-tab{
+    display: block;
+    overflow: hidden;
+    .bg-bai;
+    height: 2.4em;
+    line-height: 2.4em;
+    .font14;
+    border-bottom: 1px solid #ddd;
+    li{
+        display: block;
+        width: 25%;
+        overflow: hidden;
+        .l-left;
+        .text-ac;
+    }
+    a{
+        display: inline-block;
+        height: 2.2em;
+        width: 92%;
+        margin: 0 4%;
+    }
+    a:active,a:hover,a.active{
+        border-bottom: .2em solid #f35929;
+    }
+}
+.probox-info{
+    display: block;
+    overflow: hidden;
+    .bg-bai;
+    padding: 4px 12px;
+    .parameter{
+        display: block;
+        overflow: hidden;
+        h3{
+            .font14;
+            .col-slan;
+            border-bottom: 1px solid #3c6191;
+            margin-bottom: .4em;
+        }
+        li{
+            display: block;
+            height: 2em;
+            line-height: 2em;
+            .font14;
+            border-bottom: 1px solid #aaa;
+        }
+        p{
+            .font14;
+            line-height: 1.4em;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .commentbox{
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 4px;
+        .title{
+            display: block;
+            overflow: hidden;
+        }
+        .info{
+            display: block;
+            overflow: hidden;
+            .col-hei;
+        }
+    }
+}
+.addcarbox{
+    display: block;
+    overflow: hidden;
+    .prosec{
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+        .pic{
+            display: block;
+            overflow: hidden;
+            width: 8em;
+            height: 8em;
+            padding: 4px;
+            border: 1px solid #ddd;
+            img{
+                width: 100%;
+            }
+        }
+        .info{
+            display: block;
+            overflow: hidden;
+            line-height: 2.4em;
+            margin-left: .4em;
+        }
+        .icon-del0{
+            position: absolute;
+            right: .2em;
+        }
+    }
+    .prosize{
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+        .tag{
+            display: block;
+            overflow: hidden;
+            a{
+                display: inline-block;
+                box-sizing: border-box;
+                padding: 4px 8px;
+                border: 1px solid #f35929;
+                border-radius: 4px;
+                margin: 2px 4px;
+            }
+        }
+    }
+    .pronum{
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+        .font14;
+        a{
+            display: inline-block;
+            width: 1.4em;
+            height: 1.4em;
+            line-height: 1.4em;
+            .text-ac;
+            border: 1px solid #333;
+        }
+        input{
+            display: inline-block;
+            width: 4em;
+            height: 1.4em;
+            border: 1px solid #333;
+            margin: 0 4px;
+        }
+    }
+    a.confirm{
+        display: inline-block;
+        width: 100%;
+        height: 2.4em;
+        line-height: 2.4em;
+        .bg-cheng;
+        .col-bai;
+        .text-ac;
+        .font14;
+        margin-top: 8px;
+    }
+}
+.timebox{
+    display: block;
+    overflow: hidden;
+    background: #f6f1ee;
+    border: 1px solid #ddd;
+    padding: 8px;
+    .timecount{
+        margin: 4px 0;
+        .font18;
+        i{
+            .col-cheng;
+        }
+    }
+}
+.usedform{
+    display: block;
+    overflow: hidden;
+    padding: 4px 8px;
+    border-bottom: 1px solid #ddd;
+    h3{
+        height: 2.4em;
+        line-height: 2.4em;
+        border-bottom: 1px solid #ddd;
+    }
+}
+.usedbox{
+    display: block;
+    overflow: hidden;
+    height: 2.8em;
+    line-height: 2.8em;
+    margin: 8px 0;
+    label{
+        display: inline-block;
+        overflow: hidden;
+        width: 40%;
+        .text-ar;
+        .l-left;
+    }
+    select{
+        display: inline-block;
+        height: 2.4em;
+        margin-top: .2em;
+        .l-left;
+        width: 50%;
+        border: 1px solid #aaa;
+    }
+    input{
+        height: 2em;
+        margin-top: .4em;
+        border: 1px solid #aaa;
+        box-sizing: border-box;
+        width: 50%;
+    }
+    a.submit{
+        display: block;
+        .bg-cheng;
+        .col-bai;
+        .text-ac;
+        .font14;
+    }
+}
+.usedprize{
+    display: block;
+    overflow: hidden;
+    padding: 12px 8px;
+    background: #f6f1ee;
+    border: 1px solid #ddd;
+    margin: 8px;
+}
+
+// 一键预采
+.repurch-time{
+    display: block;
+    overflow: hidden;
+    padding: 8px;
+    .bg-bai;
+    li{
+        height: 2.4em;
+        line-height: 2.4em;
+        border-bottom: 1px solid #ddd;
+        padding: 8px 4px;
+    }
+    input{
+        border: 1px solid #333;
+        height: 2em;
+        width: 14em;
+        box-sizing: border-box;
     }
 }
